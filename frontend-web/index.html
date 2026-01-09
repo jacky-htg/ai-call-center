@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Call Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    button {
+      padding: 10px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #status {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    video {
+      width: 300px;
+      margin: 10px;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>LiveKit Call</h1>
+
+  <button id="callBtn">Start Call</button>
+
+  <div id="status">Idle</div>
+
+  <h3>Local / Remote Video</h3>
+  <div id="videos"></div>
+
+  <!-- LiveKit SDK -->
+  <script src="https://unpkg.com/livekit-client/dist/livekit-client.umd.js"></script>
+
+  <!-- App JS -->
+  <script src="app.js"></script>
+</body>
+</html>
